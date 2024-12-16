@@ -3,5 +3,5 @@ This application is built on Android platform, which is used for controlling sma
 ## Using Qt Version
 - Qt 6.8
 ## Abort code
-- It is coding with C++,nothing is QML
+- It is coding with C++,No QML code.
 - And also using CMake to construct.
