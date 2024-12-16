@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/new/prefix1/image">
+        <file>android_souces/img/max.png</file>
+        <file>android_souces/img/min.png</file>
+        <file>android_souces/icon/icon1.png</file>
+        <file>android_souces/icon/icon2.png</file>
+    </qresource>
+</RCC>
