@@ -18,7 +18,7 @@ This application is built on Android platform, which is used for controlling sma
 
 * Please ignore bugs of application.
 
-## Abort sending messages by Bluetooth 
+## about sending messages by Bluetooth 
 ### Standard
 - When send a message by application, it will add the ending flag ('\0') to the end of message.(As an end flag to receiving data)
 ```cpp
