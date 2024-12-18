@@ -9,11 +9,21 @@ This application is built on Android platform, which is used for controlling sma
  the example ( low energy scanner ) of Qt6.8
 ## UI
 - **MainInterface**
-![UI]("./ui.jpg")
+![UI]("https://github.com/wvfp/BluetoothCarController/master/ui.jpg")
 
 ## Notice
 * Please use the application after having connected to Bluetooth Device.
 
-* Mybe it have some problems.
+* The Application only is used for connecting specific device.
 
-* Please ingore bugs of application.
+* Please ignore bugs of application.
+
+## Abort sending messages by Bluetooth 
+### Standard
+- When send a message by application, it will add the ending flag ('\0') to the end of message.
+```cpp
+...
+    data.append(char('\0'));
+...
+
+```
