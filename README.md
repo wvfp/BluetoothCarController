@@ -9,7 +9,7 @@ This application is built on Android platform, which is used for controlling sma
  the example ( low energy scanner ) of Qt6.8
 ## UI
 - **MainInterface**
-![UI]("https://github.com/wvfp/BluetoothCarController/blob/master/ui.jpg")
+![UI]("./ui.jpg")
 
 ## Notice
 * Please use the application after having connected to Bluetooth Device.
