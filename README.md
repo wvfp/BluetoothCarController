@@ -20,11 +20,16 @@ This application is built on Android platform, which is used for controlling sma
 
 ## Abort sending messages by Bluetooth 
 ### Standard
-- When send a message by application, it will add the ending flag ('\0') to the end of message.
+- When send a message by application, it will add the ending flag ('\0') to the end of message.(As an end flag to receiving data)
 ```cpp
-void SendMsg(QString data){
+void SendMsg(QString &data){
     ...
     data.append(char('\0'));
     ...
 }
 ```
+- Data is sent in 1-byte [ `sizeof(char)` ] increments.
+
+
+
+
