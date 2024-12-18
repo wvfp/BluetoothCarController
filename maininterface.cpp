@@ -16,6 +16,18 @@ mainInterface::mainInterface(QWidget*parent)
         timer.start();
     });
     connect(joystick,&Joystick::joystickReleased,this,[&](){
+        this->ui->spinBox->setValue(0);
+        this->ui->spinBox_2->setValue(0);
+        QString data=QString("R+%1").arg(char(0));
+        if(preDataR!=0){
+            ble->sendMsg(data);
+            preDataR=0;
+        }
+        data=QString("L+%1").arg(char(0));
+        if(preDataL!=0){
+            ble->sendMsg(data);
+            preDataL=0;
+        }
         timer.stop();
     });
     connect(&timer,&QTimer::timeout,this,[&](){
@@ -145,7 +157,7 @@ void mainInterface::on_pushButton_5_clicked()
 
 void mainInterface::on_pushButton_6_clicked()
 {
-    QString str("C:Reboot");
+    QString str("C:Stop");
     this->ble->sendMsg(str);
 }
 
