@@ -15,6 +15,7 @@ This application is built on Android platform, which is used for controlling sma
 * Please use the application after having connected to Bluetooth Device.
 
 * The Application only is used for connecting specific device.
+_ Please ensure that all devices are properly connected before proceeding with the operation; otherwise, the application may crash.
 
 * Please ignore bugs of application.
 
